@@ -73,6 +73,7 @@ $user->connectServer($server_1);
 $user->connectServer($server_2); // fail
 
 print "---------Log---------\n";
+$user->getCurrentPlan();
 $user->printServers();
 
 
@@ -88,6 +89,7 @@ $user->subscribe(new ProPlan());
 $user->connectServer($server_2); // success
 
 print "---------Log---------\n";
+$user->getCurrentPlan();
 $user->printServers();
 
 /*
@@ -102,7 +104,8 @@ $user->unsubscribe();
 $user->connectServer($server_2); // fail
 
 print "---------Log---------\n";
-$user->printServers();
+$user->getCurrentPlan();
+
 /*
 |
 | Please submit the answer along with your Internship Application to career@runcloud.io
